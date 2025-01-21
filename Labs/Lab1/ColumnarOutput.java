@@ -1,13 +1,11 @@
 public class ColumnarOutput {
     public static void main(String[] args) {
-        // Constants
         final int START = 0;
         final int END = 4010;
         final int INCREMENT = 10;
-        final int COLUMNS = 8;
-        final boolean RIGHT_JUSTIFY = true;
+        final int COLUMNS = 29;
+        final boolean RIGHT_JUSTIFY = false;
 
-        // Variables
         int count = 0;
 
         // Loop through the range from START to END (inclusive)
