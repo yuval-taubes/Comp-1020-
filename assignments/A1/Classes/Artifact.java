@@ -1,4 +1,4 @@
-package assignments.A1;
+package assignments.A1.Classes;
 
 public class Artifact {
     // Attributes
