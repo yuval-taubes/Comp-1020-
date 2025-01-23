@@ -24,6 +24,8 @@ public class Lab2Ex4 {
     printArray(array3, size3);
 		
     // call your concatenateArrays method here
+    sizeAll = concatenateArrays(array1, size1, array2, size2, arrayAll);
+    sizeAll = concatenateArrays(arrayAll, sizeAll, array3, size3, arrayAll);
 		
     System.out.println("\nConcatenated array:");
     printArray(arrayAll, sizeAll);
@@ -41,5 +43,21 @@ public class Lab2Ex4 {
     for (int i = 0; i < size; i++) {
       System.out.println(array[i]);
     }
+  }
+
+  public static int concatenateArrays(int[] a1, int size1, int[] a2, int size2, int[] a3) {
+    if (size1 + size2 > a3.length) {
+      System.out.println("Error: Destination array is not large enough to hold the contents of the source arrays.");
+      return -1;
+    }
+
+    for (int i = 0; i < size1; i++) {
+      a3[i] = a1[i];
+    }
+    for (int i = 0; i < size2; i++) {
+      a3[size1 + i] = a2[i];
+    }
+
+    return size1 + size2;
   }
 }
