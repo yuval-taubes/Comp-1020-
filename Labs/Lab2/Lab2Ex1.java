@@ -2,7 +2,7 @@ import java.util.Random;
 public class Lab2Ex1 {
 
     // Constant SEED
-    private static final int SEED = 301524;
+    private static final int SEED = 333334;
 
     // Method 1: No arguments, no return
     public static void method1() {
